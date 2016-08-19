@@ -10,10 +10,12 @@ var createStoreWithMiddleware = compose(
 
 // App Reducers
 import mainReducer from './reducers/main.js';
+import testReducer from './reducers/test.js';
 
 // Combine Reducers
 var reducers = combineReducers({
     mainReducer: mainReducer,
+    testReducer: testReducer
 });
 
 var rootReducer = (state, action) => {
